@@ -15,7 +15,7 @@ import { Container, Avatar, Name, Time, SubmitButton } from "./styles";
 export default function Confirm({ navigation }) {
   const provider = navigation.getParam("provider");
   const time = navigation.getParam("time");
-  console.log(time);
+  // console.log(time);
 
   const timeFormatted = useMemo(
     () => formatRelative(parseISO(time), new Date(), { locale: pt }),
@@ -27,7 +27,7 @@ export default function Confirm({ navigation }) {
       provider_id: provider.id,
       date: time
     });
-    console.log(a);
+    // console.log(a);
     // console.log("chegou antes");
     // navigation.popToTop(); //serve para desfazer a pilha e ir para a primeira pagina
     navigation.navigate("Dashboard");

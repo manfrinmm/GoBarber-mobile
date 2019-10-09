@@ -55,7 +55,7 @@ function Index() {
   useEffect(() => {
     //Dispara quando o app estiver aberto
     function onReceived(data) {
-      console.tron.log(data);
+      // console.tron.log(data);
     }
 
     //Dispara quando clica em uma notificação (cm app fechado) o app é aberto.
