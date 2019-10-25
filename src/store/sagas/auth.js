@@ -45,6 +45,7 @@ export function* signUp({ name, email, password }) {
       email,
       password
     });
+    Alert.alert("Cadastro", "Usuário criado com sucesso!");
 
     // history.push("/");
   } catch (error) {
@@ -55,5 +56,5 @@ export function* signUp({ name, email, password }) {
 }
 
 export function singOut() {
-  // history.push("/");
+  // history.push("/");'
 }
